@@ -1,0 +1,577 @@
+
+DICTIONARY: 133
+
+DICTIONARY: 132
+
+DICTIONARY: 131
+
+DICTIONARY: 130
+
+DICTIONARY: 137
+
+DICTIONARY: 136
+
+DICTIONARY: 135
+
+DICTIONARY: 134
+
+DICTIONARY: 139
+
+DICTIONARY: 138
+
+DICTIONARY: 24
+(Krause et al., 2013; Schepers et al., 2013)
+
+DICTIONARY: 25
+(Ellison et al., 2011; Tihan et al., 2008)
+(Wani et al., 2012; Witt et al., 2011)
+(Ebert et al., 1999; Slavc et al., 1995)
+(Godfraind et al., 2012; Korshunov et al., 2010)
+(Brennan et al., 2013; Sturm et al., 2012, 2014)
+(Korshunov et al., 2010; Witt et al., 2011)
+(Gaspar et al., 2006; Ohgaki et al., 1993)
+(Ebert et al., 1999; Slavc et al., 1995)
+
+DICTIONARY: 26
+(Pfeilsto¨ cker et al., 2007; Sekeres, 2010)
+(Maciejewski et al., 2009; Gondek et al., 2008)
+(Sontakke et al., 2014; He et al., 2011)
+
+DICTIONARY: 27
+(Baselga et al., 1996; Druker et al., 2001; Flaherty et al., 2010)
+(Brinster et al., 1984; Sa´ enz Robles et al., 1994)
+(Brinster et al., 1984; Sa´ enz Robles et al., 1994)
+(CBTRUS, 2006; Paulus and Brandner, 2007)
+
+DICTIONARY: 20
+(Hu et al., 2012; Wan et al., 2012)
+(Xu et al., 2003; Watanabe et al., 2010)
+(Lallemand et al., 2005; Tang et al., 2011)
+(Xu et al., 2003; Li et al., 2008)
+(Uhl et al., 2004; Mohammad et al., 2011)
+(Li et al., 2008; Watanabe et al., 2010)
+
+DICTIONARY: 21
+(Sreenath et al., 2011; Tomlins et al., 2005)
+(Bello et al., 1997; Litvinov et al., 2006)
+(Lamar et al., 2012; Overholtzer et al., 2006)
+(Liu-Chittenden et al., 2012; Zhao et al., 2008)
+
+DICTIONARY: 22
+
+DICTIONARY: 23
+(Jeon et al., 2012; Schafer et al., 2009)
+(Hardie, 2013; Shackelford et al., 2013)
+(Haq et al., 2013; O’Connell et al., 2013; Vazquez et al., 2013)
+
+DICTIONARY: 28
+(Galba´ n et al., 2008; Hui et al., 2006)
+
+DICTIONARY: 29
+(Haferlach et al., 2014; Papaemmanuil et al., 2013)
+
+DICTIONARY: 4
+(Ansell et al., 2015; Westin et al., 2014)
+(Broz et al., 2014; Ruffell et al., 2014)
+(Gabrilovich et al., 2012; Rabinovich et al., 2007)
+(Lynch et al., 2012; Reck et al., 2013)
+(Iida et al., 2013; Viaud et al., 2013)
+(Iriyama et al., 2015; Kumagai et al., 2014)
+(Borg et al., 2004; Delahaye et al., 2011)
+(Dudek-Peric et al., 2015; Tesniere et al., 2010)
+(Liu et al., 2015; Park et al., 2010)
+
+DICTIONARY: 8
+(Gama et al., 2006; Igarashi et al., 2013)
+(Fried and Duffy, 1996; Salanti et al., 2004)
+
+DICTIONARY: 119
+
+DICTIONARY: 120
+
+DICTIONARY: 121
+
+DICTIONARY: 122
+
+DICTIONARY: 123
+
+DICTIONARY: 124
+
+DICTIONARY: 125
+
+DICTIONARY: 126
+
+DICTIONARY: 127
+
+DICTIONARY: 128
+
+DICTIONARY: 129
+
+DICTIONARY: 118
+
+DICTIONARY: 59
+(Brooks and Gaesser, 1980; Gladden, 2008)
+(Bodi et al., 2009; Das et al., 2012)
+(Agaimy et al., 2012; Kumar et al., 2011)
+(Gertz et al., 1988; Gladden, 2008; Stanley, 1991)
+(Semenza, 2008; Sonveaux et al., 2008)
+
+DICTIONARY: 58
+
+DICTIONARY: 55
+(Kim et al., 2006; Papandreou et al., 2006)
+(Luong et al., 2000; Watkins et al., 2007)
+(Luong et al., 2000; Tucek, 1967)
+(Zhang, 2011; Table S4)
+(Lundquist et al., 1962; Tsukamoto et al., 1989)
+(Kimura et al., 2013; Maxwell et al., 2010)
+
+DICTIONARY: 54
+(O’Reilly et al., 2006; Rodrik-Outmezguine et al., 2011)
+(Stemke-Hale et al., 2008; Vasudevan et al., 2009)
+(Faber et al., 2009; O’Brien et al., 2010)
+(Jia et al., 2008; Ni et al., 2012)
+
+DICTIONARY: 57
+(Carter et al., 2012; Dewhurst et al., 2014; Zack et al., 2013)
+(Shi et al., 2014; Van Allen et al., 2014)
+(Janssen et al., 2009; Weaver et al., 2007)
+(de Bruin et al., 2014; Gerlinger et al., 2014)
+(Hodgkinson et al., 2014; Lohr et al., 2014)
+
+DICTIONARY: 56
+
+DICTIONARY: 51
+(Nisato et al., 2003; Yamada et al., 2006)
+(Erkan et al., 2012; Hwang et al., 2008)
+(Eltzschig et al., 2005; Morote-Garcia et al., 2009)
+(Batchelor et al., 2007; Huang et al., 2012)
+
+DICTIONARY: 50
+
+DICTIONARY: 53
+(Abt et al., 2012; Clarke et al., 2010)
+(TLR5R392X) (Hawn et al., 2003; Misch and Hawn, 2008)
+(Gewirtz et al., 2006; Hawn et al., 2003)
+(Casanova et al., 2011; Hugot et al., 2007)
+(Kryczek et al., 2009; Wang et al., 2009)
+
+DICTIONARY: 52
+
+DICTIONARY: 115
+
+DICTIONARY: 114
+
+DICTIONARY: 88
+(Driessens et al., 2012; Schepers et al., 2012)
+(Doetsch et al., 1999; Partap et al., 2011)
+(Hatten and Roussel, 2011; Ming and Song, 2011)
+(Nguyen et al., 2012; Reya et al., 2001)
+(Liu et al., 2007; Merlos-Sua´ rez et al., 2011; Zheng et al., 2013)
+
+DICTIONARY: 89
+(Barron and Rowley, 2012; Franco and Hayward, 2012)
+(Duran et al., 2008; Komatsu et al., 2010; Ling et al., 2012)
+
+DICTIONARY: 111
+
+DICTIONARY: 110
+
+DICTIONARY: 113
+
+DICTIONARY: 112
+
+DICTIONARY: 82
+
+DICTIONARY: 83
+
+DICTIONARY: 80
+(Bose et al., 2002; Puc et al., 2005)
+(Bettencourt-Dias et al., 2005; Habedanck et al., 2005)
+(Habedanck et al., 2005; Kleylein-Sohn et al., 2007)
+(Guderian et al., 2010; Holland et al., 2012)
+(Bettencourt-Dias et al., 2005; Habedanck et al., 2005)
+(Nakagawara et al., 1992; Nakagawara et al., 1994)
+
+DICTIONARY: 81
+
+DICTIONARY: 86
+
+DICTIONARY: 87
+(NFAT) (The´ bault et al., 2006; Lehen’kyi et al., 2007)
+(Mignen and Shuttleworth, 2000; Mignen et al., 2009)
+
+DICTIONARY: 84
+
+DICTIONARY: 85
+
+DICTIONARY: 3
+(Ben-Porath et al., 2008; Wong et al., 2008)
+(Cordenonsi et al., 2011; Mani et al., 2008)
+(Chen et al., 2014; Cordenonsi et al., 2011)
+(Carroll et al., 2015; Dang, 2013)
+(Ben-Porath et al., 2008; Wong et al., 2008)
+
+DICTIONARY: 7
+(Cao et al., 2010; Kim et al., 2013)
+
+DICTIONARY: 108
+(Silver Spring). 2014;22(S2)
+(Lancet Oncol. 2009;10:501-507)
+(Lancet. 2010;376:1741-1750)
+(Full Rep). 2009;(183)
+(Full Rep). 2007;(159)
+(CA Cancer J Clin 2010;60:277-300)
+(CA Cancer J Clin 2011;61:69-90)
+(ERSPC). Can J Urol. 2005;12(suppl 1)
+
+DICTIONARY: 109
+
+DICTIONARY: 102
+
+DICTIONARY: 103
+
+DICTIONARY: 100
+(Cao et al., 2010; Kim et al., 2013)
+
+DICTIONARY: 101
+(Gama et al., 2006; Igarashi et al., 2013)
+(Fried and Duffy, 1996; Salanti et al., 2004)
+
+DICTIONARY: 106
+(Ansell et al., 2015; Westin et al., 2014)
+(Broz et al., 2014; Ruffell et al., 2014)
+(Gabrilovich et al., 2012; Rabinovich et al., 2007)
+(Lynch et al., 2012; Reck et al., 2013)
+(Iida et al., 2013; Viaud et al., 2013)
+(Iriyama et al., 2015; Kumagai et al., 2014)
+(Borg et al., 2004; Delahaye et al., 2011)
+(Dudek-Peric et al., 2015; Tesniere et al., 2010)
+(Liu et al., 2015; Park et al., 2010)
+
+DICTIONARY: 107
+
+DICTIONARY: 104
+(Saito et al., 2010; Kikushige et al., 2010; Goardon et al., 2011)
+
+DICTIONARY: 105
+(Rintoul et al., 2012; Wise et al., 1999)
+(Guba et al., 2002; Ottolino-Perry et al., 2014)
+
+DICTIONARY: 39
+
+DICTIONARY: 38
+(Ward et al., 1989; Figure 2C)
+(Huntington et al., 2007; Figure 6A)
+(Khan et al., 2006; Mani et al., 2009; Poire´ et al., 2010)
+
+DICTIONARY: 33
+
+DICTIONARY: 32
+(Fallarino et al., 1998; Chambers et al., 1998)
+(Ahmadzadeh et al., 2009; Sfanos et al., 2009)
+(Parsa et al., 2007; Marzec et al., 2008)
+(Fleury et al., 1991; Moebius et al., 1993)
+(Crispen et al., 2008; Chavin et al., 2009)
+
+DICTIONARY: 31
+(Boi et al., 2013; Parilla Castellar et al., 2014)
+(Ngo et al., 2011; Zhang et al., 2012)
+(Boi et al., 2013; Parilla Castellar et al., 2014)
+(Palomero et al., 2014; Abate et al., 2014b)
+
+DICTIONARY: 30
+(Feng and Derynck, 2005; Massague´ , 2008)
+(Ettahar et al., 2013; Seo et al., 2006)
+(Jho et al., 2002; Lustig et al., 2002)
+(Bartholin et al., 2008; Monkley et al., 1996)
+(Taniguchi et al., 2012; Yu et al., 2005)
+
+DICTIONARY: 37
+
+DICTIONARY: 36
+
+DICTIONARY: 35
+
+DICTIONARY: 34
+(Meyer et al., 2013; Paccez et al., 2014)
+(Holland et al., 2005; Janssen et al., 1991)
+
+DICTIONARY: 60
+
+DICTIONARY: 61
+
+DICTIONARY: 62
+(AGO-CLIP) data (Chi et al., 2009; Hafner et al., 2010)
+(Muranen et al., 2012; Pradeep et al., 2012a)
+(Okamura et al., 2001; Tomasini et al., 2001)
+
+DICTIONARY: 63
+(Fang et al., 2010; Vander Heiden et al., 2010)
+(Kim et al., 2008; Tabas and Ron, 2011)
+
+DICTIONARY: 64
+(Chamorro-Garcia et al., 2012; Linder et al., 2000)
+(Dou et al., 2006; Pasini et al., 2004)
+(Perrin et al., 2003; Shanower et al., 2005)
+
+DICTIONARY: 65
+(Bingle et al., 2002; Ruffell et al., 2012a)
+(DeNardo et al., 2009; Lin et al., 2001)
+(DeNardo et al., 2011; Doedens et al., 2010)
+(Mumm et al., 2011; Sturlan et al., 2001)
+(Guiducci et al., 2005; Vicari et al., 2002)
+(Kroemer et al., 2013; Ma et al., 2013)
+(Bindea et al., 2013; Gu-Trantien et al., 2013)
+(Hess et al., 2006; Tabchy et al., 2010)
+
+DICTIONARY: 66
+(Kim et al., 2008; Sancak et al., 2008)
+(Binda et al., 2009; Bonﬁls et al., 2012)
+(Binda et al., 2009; Bonﬁls et al., 2012)
+(Binda et al., 2009; Bonﬁls et al., 2012)
+(Hutagalung and Novick, 2011; Stenmark, 2009)
+(Calero et al., 2003; Gomes et al., 2003)
+(Calero et al., 2003; Gomes et al., 2003)
+
+DICTIONARY: 67
+
+DICTIONARY: 68
+
+DICTIONARY: 69
+(Diskin et al., 2012; Maris et al., 2008)
+(Kanduri, 2011; Whitehead et al., 2009)
+(Care´ n et al., 2010; Lastowska et al., 2001)
+
+DICTIONARY: 2
+
+DICTIONARY: 6
+
+DICTIONARY: 99
+
+DICTIONARY: 98
+
+DICTIONARY: 91
+
+DICTIONARY: 90
+
+DICTIONARY: 93
+(Zhang et al., 2010; Zhao et al., 2007)
+(Lee et al., 2008; Tapon et al., 2002)
+(Angers et al., 2006; Jin et al., 2006)
+(Toji et al., 2004; Yang et al., 2004; Yin et al., 2013)
+(Yu et al., 2012; Zhou et al., 2009)
+(Jiao et al., 2014; Liu-Chittenden et al., 2012)
+
+DICTIONARY: 92
+(Johansen and Lamark, 2011; Mijaljica et al., 2012)
+(ALS) (Maruyama et al., 2010; Rezaie et al., 2002)
+(Itakura and Mizushima, 2011; Kirkin et al., 2009b)
+(Kim et al., 2014; Li et al., 2009)
+
+DICTIONARY: 95
+(Bailey et al., 2008; Tian et al., 2009)
+(Bailey et al., 2008; Feldmann et al., 2008a, 2008b)
+
+DICTIONARY: 94
+(Kakiuchi et al., 2014; Wang et al., 2014)
+
+DICTIONARY: 97
+(Ansell et al., 2015; Westin et al., 2014)
+(Broz et al., 2014; Ruffell et al., 2014)
+(Gabrilovich et al., 2012; Rabinovich et al., 2007)
+(Lynch et al., 2012; Reck et al., 2013)
+(Iida et al., 2013; Viaud et al., 2013)
+(Iriyama et al., 2015; Kumagai et al., 2014)
+(Borg et al., 2004; Delahaye et al., 2011)
+(Dudek-Peric et al., 2015; Tesniere et al., 2010)
+(Liu et al., 2015; Park et al., 2010)
+
+DICTIONARY: 96
+(Ben-Porath et al., 2008; Wong et al., 2008)
+(Cordenonsi et al., 2011; Mani et al., 2008)
+(Chen et al., 2014; Cordenonsi et al., 2011)
+(Carroll et al., 2015; Dang, 2013)
+(Ben-Porath et al., 2008; Wong et al., 2008)
+
+DICTIONARY: 11
+(Saito et al., 2010; Kikushige et al., 2010; Goardon et al., 2011)
+
+DICTIONARY: 10
+
+DICTIONARY: 13
+
+DICTIONARY: 12
+(Rintoul et al., 2012; Wise et al., 1999)
+(Guba et al., 2002; Ottolino-Perry et al., 2014)
+
+DICTIONARY: 15
+(Lowe et al., 2004; McMahon, 2014)
+(Boone et al., 2011; Wirth et al., 2014)
+(Hayashi et al., 2012; Orth et al., 2012)
+
+DICTIONARY: 14
+(Miller et al., 2011; Yuan and Cantley, 2008)
+(Dumont et al., 2012; Kalinsky et al., 2009)
+(Astle et al., 2007; Ooms et al., 2009)
+(Denley et al., 2009; Ooms et al., 2006)
+(Li et al., 2002; Schwertfeger et al., 2001)
+(Liu et al., 2011; Meyer et al., 2011; Tikoo et al., 2012)
+(Carpten et al., 2007; Kim et al., 2008)
+(Ju et al., 2007; Maroulakou et al., 2007)
+(Chew et al., 2015; Chin et al., 2014b)
+(Chabottaux and Noel, 2007; Jezierska and Motyl, 2009)
+(Gruvberger et al., 2001; van ’t Veer et al., 2002)
+(Ma and Ellis, 2013; Pang et al., 2014)
+(Creighton, 2007; Grell et al., 2012; Sta˚ l et al., 2003)
+
+DICTIONARY: 17
+(Weigert et al., 2012; Baffert et al., 2010)
+
+DICTIONARY: 16
+(DeBerardinis et al., 2008; Phan et al., 2014)
+(Carracedo et al., 2013; Zaytseva et al., 2012)
+(Kim et al., 2009; Zhao et al., 2012)
+(Beyea et al., 2007; Grefhorst et al., 2002)
+(Russo, 2011; Villablanca et al., 2010)
+
+DICTIONARY: 19
+(gH2AX) (An et al., 2010; Chan et al., 2002)
+(Kurimasa et al., 1999; Zhao et al., 2006)
+(Evert et al., 2013; Willmore et al., 2008)
+(Al-Ubaidi et al., 2013; Warde et al., 2011)
+(Al-Ubaidi et al., 2013; Goodwin et al., 2013)
+(Goodwin et al., 2013; Mayeur et al., 2005)
+(Goodwin et al., 2013; Peng et al., 2005)
+(Hill et al., 2011; Jeyakumar et al., 2007; Yu et al., 2006)
+
+DICTIONARY: 18
+(Rhodes et al., 2007; Wouters et al., 2009; Radich et al., 2006)
+(Binda et al., 2010; Schmidt and McCafferty, 2007)
+(Harris et al., 2012; Lynch et al., 2012)
+(Zhang et al., 2013; Sarvi et al., 2014)
+(Santos-Rosa et al., 2002; Bernstein et al., 2005)
+(HDACs) 1 and 2 (You et al., 2001; Shi et al., 2003)
+(Harris et al., 2012; Lynch et al., 2012)
+
+DICTIONARY: 117
+
+DICTIONARY: 116
+
+DICTIONARY: 48
+(Wang et al., 2007; Wu et al., 2014)
+
+DICTIONARY: 49
+(Poulikakos et al., 2011; Shi et al., 2012a)
+
+DICTIONARY: 46
+(Ruteshouser et al., 2008; Gadd et al., 2012)
+(Rakheja et al., 2014; Torrezan et al., 2014)
+(Kobayashi et al., 2008; Self et al., 2006)
+(Bainbridge et al., 2013; Lupski et al., 2013)
+
+DICTIONARY: 47
+
+DICTIONARY: 44
+
+DICTIONARY: 45
+(Grasso et al., 2012; Taylor et al., 2010)
+(Perez-Stable et al., 2000; Wang et al., 2007)
+(Hahn et al., 2011; Zhang et al., 2008)
+(Vivas-Mejia et al., 2010; Yang et al., 2003)
+
+DICTIONARY: 42
+
+DICTIONARY: 43
+
+DICTIONARY: 40
+(Sekulic et al., 2012; Tang et al., 2012)
+(Axelson et al., 2013; Sekulic et al., 2012)
+(Dijkgraaf et al., 2011; Figure 2C)
+(Wang et al., 2013; Figure 3B)
+(Ayers and The´ rond, 2010; Riobo et al., 2006)
+(Tang et al., 2014; Wang et al., 2012)
+
+DICTIONARY: 41
+(Shaw et al., 2013, 2014; Solomon et al., 2014)
+(Tanimoto et al., 2014; Yamada et al., 2012)
+(Buder et al., 2013; Chen et al., 2014)
+(Creighton et al., 2006; Gatza et al., 2010, 2014)
+(Huang et al., 2012; Johannessen et al., 2013)
+
+DICTIONARY: 1
+(Ansell et al., 2015; Westin et al., 2014)
+(Broz et al., 2014; Ruffell et al., 2014)
+(Gabrilovich et al., 2012; Rabinovich et al., 2007)
+(Lynch et al., 2012; Reck et al., 2013)
+(Iida et al., 2013; Viaud et al., 2013)
+(Iriyama et al., 2015; Kumagai et al., 2014)
+(Borg et al., 2004; Delahaye et al., 2011)
+(Dudek-Peric et al., 2015; Tesniere et al., 2010)
+(Liu et al., 2015; Park et al., 2010)
+
+DICTIONARY: 5
+
+DICTIONARY: 9
+
+DICTIONARY: 142
+
+DICTIONARY: 140
+
+DICTIONARY: 141
+
+DICTIONARY: 77
+(Grigoriadis et al., 1993; Shimizu et al., 2010)
+(Lin et al., 2009; Walkley et al., 2008)
+(Allen et al., 2011; Robey et al., 1996; Zender et al., 2013)
+(Engin et al., 2009; Zender et al., 2013)
+(Engin et al., 2009; Tanaka et al., 2009)
+(Baird et al., 2005; Henderson et al., 2005)
+
+DICTIONARY: 76
+
+DICTIONARY: 75
+
+DICTIONARY: 74
+(Cortes et al., 2011; Redaelli et al., 2009)
+(Dai et al., 2004; Donato et al., 2003; Hochhaus et al., 2002)
+(Chan et al., 2011; Eide et al., 2011)
+(Peng et al., 2004; Gozgit et al., Blood 2013, abstract 3992)
+(100 mg; 27 nM) (Gozgit et al., Blood 2013, abstract 3992; Talpaz et al., 2006)
+(Cortes et al., 2012; Gozgit et al., Blood 2013, abstract 3992)
+(O’Hare et al., 2009; Zhou et al., 2011)
+(Eide et al., 2011; O’Hare et al., 2009)
+(Eide et al., 2011; O’Hare et al., 2009)
+(Khorashad et al., 2008; Soverini et al., 2009)
+(Awad et al., 2013; Davare et al., 2013)
+(Khorashad et al., 2006; Shah et al., 2007)
+
+DICTIONARY: 73
+(Kenney et al., 2003; Thomas et al., 2009)
+(Kim et al., 2013; Romer et al., 2004)
+(Weiss et al., 1997; Zhu et al., 2012)
+
+DICTIONARY: 72
+(Dutt et al., 2011; Ebert et al., 2008)
+(Elyada et al., 2011; Wu et al., 2012)
+(Bide` re et al., 2009; Elyada et al., 2011; Wu et al., 2012)
+
+DICTIONARY: 71
+(Wagner et al., 2008; Naylor et al., 2008)
+(Mikhaylova et al., 2008; Yi et al., 2010)
+(Yi et al., 2010; Mikhaylova et al., 2012)
+
+DICTIONARY: 70
+(Iwahara et al., 1997; Morris et al., 1997)
+(Kwak et al., 2010; Shaw and Engelman, 2013)
+(Knudson and Strong, 1972; Mosse´ et al., 2008)
+(Bossi et al., 2010; Lee et al., 2010)
+(Choi et al., 2010; Sasaki et al., 2010)
+(Attiyeh et al., 2005; Morowitz et al., 2003)
+
+DICTIONARY: 79
+(RIDD) (Lee et al., 2008; So et al., 2012)
+(Hotamisligil, 2010; Ozcan et al., 2006)
+
+DICTIONARY: 78
+(Lau et al., 2012; Zhao et al., 2008)
