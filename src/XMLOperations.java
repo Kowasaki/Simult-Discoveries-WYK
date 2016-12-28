@@ -27,11 +27,11 @@ public class XMLOperations{
       "<title type=\"source\">CA-A CANCER JOURNAL FOR CLINICIANS</title>" };
 
       filter.addAll(Arrays.asList(listofjournals));
-
+      // System.out.println("Working Directory = " + System.getProperty("user.dir"));
 
       try{
         File xmlSource = new File(xmlFile);
-        File output = new File("out0.csv");
+        File output = new File(args[0].replace(".xml","") + ".csv");
         BufferedReader br = null;
         FileReader fr = null;
         boolean nodeComplete = false;
@@ -39,10 +39,10 @@ public class XMLOperations{
         String line;
         br = new BufferedReader(new FileReader(xmlSource));
         int f = 1;
-        String outputName = "";
+        // String outputName = "";
         while(output.exists()) {
-          output = new File("out" + Integer.toString(f) + ".csv");
-          outputName = "out" + Integer.toString(f) + ".csv";
+          output = new File(args[0].replace(".xml","")+"-" + Integer.toString(f) + ".csv");
+          // outputName = "out" + Integer.toString(f) + ".csv";
           f++;
         }
         output.createNewFile();
@@ -65,25 +65,17 @@ public class XMLOperations{
                   break;
                 }
               }
-
             } else if (!nodeComplete){
               node.append(line);
             }
         }
         bw.close();
         // findCommonRef(outputName);
-
       }
       catch (Exception e){
 	       e.printStackTrace();
       }
   }
-
-  // private static void findCommonRef(String output)throws Exception{
-  //   BufferedWriter bw = new BufferedWriter(new FileWriter(output));
-  //   System.out.println("TODO");
-  //   bw.close();
-  // }
 
 
   private static void parseNode(String node,BufferedWriter output) throws Exception{
@@ -101,12 +93,6 @@ public class XMLOperations{
     ArrayList<String> authorArr = new ArrayList<String>();
     ArrayList<String> yearArr = new ArrayList<String>();
     ArrayList<String> doiArr = new ArrayList<String>();
-    // ArrayList<String> citedAuthorArr = new ArrayList<String>();
-    // ArrayList<String> citedTitleArr = new ArrayList<String>();
-    // ArrayList<String> citedWorkArr = new ArrayList<String>();
-    // ArrayList<String> citedYearArr = new ArrayList<String>();
-    // ArrayList<String> citedDoiArr = new ArrayList<String>();
-    // ArrayList<String> refID = new ArrayList<String>();
 
     NodeList recList = doc.getElementsByTagName("REC");
 
@@ -154,10 +140,8 @@ public class XMLOperations{
               }
             }
           }
-          // if(pAuthor.capacity() > 1){
-            // System.out.println(pAuthor.length());
+
           if(pAuthor.length() > 0 && pAuthor.charAt(pAuthor.length() - 1) == ',') pAuthor.deleteCharAt(pAuthor.length() - 1);
-          // }
           authorArr.add("\""+pAuthor.toString()+"\"");
 
 
@@ -189,7 +173,6 @@ public class XMLOperations{
 
           NodeList referenceList = e.getElementsByTagName("reference");
           // System.out.println("ref: " + referenceList.getLength());
-          // if(referenceList.getLength() > 0){
           for(int r = 0; r < referenceList.getLength(); r++){
             Node ref = referenceList.item(r);
             if (ref.getNodeType() == Node.ELEMENT_NODE) {
@@ -217,11 +200,9 @@ public class XMLOperations{
                   // System.out.println("Cited Author : " + citedAuthor);
                   Authors.append("\"");
                   Authors.append(eElement.getElementsByTagName("citedAuthor").item(i).getTextContent());
-                  // Authors = "\"" + Authors;
                   if(i < cA-1) Authors.append(",");
                 }
                 Authors.append("\"");
-                // citedAuthorArr.add(Authors);
                 output.write(Authors.append(",").toString());
               }else{
                 output.write(" ,");
@@ -264,23 +245,7 @@ public class XMLOperations{
               output.write(" \n");
             }
           }
-          // }
         }
       }
-      // for(int i = 0; i < 1; i++){
-        // if(titleArr.size() > i){output.write(titleArr.get(i)+",");} else {output.write(",");}
-        // if (authorArr.size() > i){output.write(authorArr.get(i)+",");} else {output.write(",");}
-        // if (yearArr.size() > i){output.write(yearArr.get(i)+",");} else {output.write(",");}
-        // if (doiArr.size() > i){output.write(doiArr.get(i)+",");} else {output.write(",");}
-        // if (journalArr.size() > i){output.write(journalArr.get(i)+",");} else {output.write(",");}
-        // if (citedTitleArr.size() > i){output.write(citedTitleArr.get(i)+","); } else {output.write(",");}
-        // if (citedAuthorArr.size() > i){output.write(citedAuthorArr.get(i)+","); } else {output.write(",");}
-        // if (citedYearArr.size() > i){ output.write(citedYearArr.get(i)+",");} else {output.write(",");}
-        // if (citedDoiArr.size() > i) {output.write(citedDoiArr.get(i)+",");} else {output.write(",");}
-        // if (citedWorkArr.size() > i) {output.write(citedWorkArr.get(i)+",");} else {output.write(",");}
-        // if (refID.size() > i) {output.write(refID.get(i)+"\n");} else {output.write("\n");};
-      // }
-
     }
-
 }

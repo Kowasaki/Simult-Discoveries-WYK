@@ -1,0 +1,3 @@
+#$ -j y
+java XMLOperations WR_2015_20160330225524_DU_0001.xml
+java XMLOperations WR_2015_20160330230947_DU_0001.xml
