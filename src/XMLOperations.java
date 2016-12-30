@@ -10,7 +10,9 @@ import java.io.FileWriter;
 import org.w3c.dom.*;
 import java.util.*;
 
-
+/**
+* This class parses the jorunal data XML node by node and writes the child-parent sources into a csv file
+**/
 public class XMLOperations{
 
   public static void main(String args[]) throws Exception {
@@ -31,23 +33,28 @@ public class XMLOperations{
 
       try{
         File xmlSource = new File(xmlFile);
-        File output = new File(args[0].replace(".xml","") + ".csv");
+        // windows
+        // File output = new File("..\\csv\\"+args[0].replace(".xml","") + ".csv");
+        // unix
+        File output = new File("../csv/"+args[0].replace(".xml","") + ".csv");
+
         BufferedReader br = null;
         FileReader fr = null;
         boolean nodeComplete = false;
-        StringBuilder node= new StringBuilder();;
+        StringBuilder node= new StringBuilder();
         String line;
         br = new BufferedReader(new FileReader(xmlSource));
         int f = 1;
         // String outputName = "";
         while(output.exists()) {
-          output = new File(args[0].replace(".xml","")+"-" + Integer.toString(f) + ".csv");
+          // output = new File("..\\csv\\"+args[0].replace(".xml","")+"-" + Integer.toString(f) + ".csv");
+          output = new File("../csv/"+args[0].replace(".xml","")+"-" + Integer.toString(f) + ".csv");
           // outputName = "out" + Integer.toString(f) + ".csv";
           f++;
         }
         output.createNewFile();
         BufferedWriter bw = new BufferedWriter(new FileWriter(output));
-        bw.write("reference title,reference first author,reference year,reference DOI,reference journal,parent title,parent all authors,parent year,parent DOI,parent journal,reference ID\n");
+        // bw.write("reference title,reference first author,reference year,reference DOI,reference journal,parent title,parent all authors,parent year,parent DOI,parent journal,reference ID\n");
 
         while ((line = br.readLine()) != null){
             if(line.contains("<REC ")){
@@ -59,7 +66,6 @@ public class XMLOperations{
               node.append(line);
               nodeComplete = true;
               for(String journal : filter){
-                // System.out.println(journal);
                 if( node.toString().contains(journal)){
                   parseNode(node.toString(),bw);
                   break;
@@ -70,14 +76,17 @@ public class XMLOperations{
             }
         }
         bw.close();
-        // findCommonRef(outputName);
       }
       catch (Exception e){
 	       e.printStackTrace();
       }
   }
 
-
+  /**
+  * Parses the indviual records as DOMs, writes the relevant info into csv
+  * @param String node a <REC>...</REC> XML node
+  * @param BufferedWriter output a writer object for writing csv
+  **/
   private static void parseNode(String node,BufferedWriter output) throws Exception{
 
     InputSource is = new InputSource();
