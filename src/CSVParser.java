@@ -60,7 +60,6 @@ public class CSVParser{
     }
   }
 
-
   private static boolean checkNoSpace(String[] lineArr ){
     for(int i = 0; i < lineArr.length-1; i++){
       if(lineArr[i].trim().length() == 0){
