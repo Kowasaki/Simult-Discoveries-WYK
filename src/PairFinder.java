@@ -21,14 +21,12 @@ public class PairFinder{
       File temp = new File("temp");
 
       BufferedReader br = null;
-      FileReader fr = null;
       String line;
       br = new BufferedReader(new FileReader(csvSource));
       int f = 1;
 
       temp.createNewFile();
       BufferedWriter bw = new BufferedWriter(new FileWriter(temp));
-      // int j = 0;
       int lineNum = 0;
       String currParent = "";
       LinkedHashMap<String, String[]> lookup = new LinkedHashMap<String, String[]>();
@@ -105,7 +103,6 @@ public class PairFinder{
                               twins.add(possiblities.get(i).get(j));
                             }
                             // System.out.println("Twin size: " + twins.size());
-                            // if(twins.size() > 10) System.out.println(twins.get(10000000));
                         }
                       }
                     }
@@ -145,7 +142,6 @@ public class PairFinder{
           currParent = lineArr[10].split(":")[1];
           lookup = new LinkedHashMap<String, String[]>();
           pairs = new HashSet<String>();
-          // System.out.println(lineArr[10000000]);
         }
       }
 
@@ -182,17 +178,20 @@ public class PairFinder{
           sum += (double)counts.get(childArr[i]);
         }
         double jacc = calculateJaccard(sum , childParents.get(pairCode).size());
-        StringBuilder allP = new StringBuilder("\"");
-        for(int i = 0; i < childParents.get(pairCode).size(); i++){
-          allP.append(childParents.get(pairCode).get(i));
-          allP.append(",");
+        // Screen for useful groups here
+        if(childArr.length <= 4 && jacc >= 0.5 ){
+          StringBuilder allP = new StringBuilder("\"");
+          for(int i = 0; i < childParents.get(pairCode).size(); i++){
+            allP.append(childParents.get(pairCode).get(i));
+            allP.append(",");
+          }
+          allP.deleteCharAt(allP.length()-1);
+          allP.append("\"");
+          bw.write(pairCode + "," + allP.toString() +"," + jacc + "\n");
         }
-        allP.deleteCharAt(allP.length()-1);
-        allP.append("\"");
-        bw.write(pairCode + "," + allP.toString() +"," + jacc + "\n");
       }
       bw.close();
-      // temp.delete();
+      temp.delete();
     }
     catch (Exception e){
        e.printStackTrace();

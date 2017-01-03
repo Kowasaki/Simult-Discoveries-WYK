@@ -14,13 +14,9 @@ public class CSVParser{
 
     try{
       File csvSource = new File(csv);
-      // windows
       File output = new File("parsed.csv");
-      // unix
-      // File output = new File("../csv/"+args[0].replace(".xml","") + ".csv");
 
       BufferedReader br = null;
-      FileReader fr = null;
       String line;
       br = new BufferedReader(new FileReader(csvSource));
       int f = 1;
@@ -80,7 +76,6 @@ public class CSVParser{
           String childID = Integer.toString(child.toString().hashCode());
           String parentID = Integer.toString(parent.toString().hashCode());
           if(ref.get(childID) >= 5){
-            // System.out.println("criteria met");
             bw.write(line + id +","+ childID + "," + parentID + ","+ ref.get(childID)+"\n");
             kept++;
           }
