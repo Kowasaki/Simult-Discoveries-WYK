@@ -24,6 +24,8 @@ public class CSVParser{
       String line;
       br = new BufferedReader(new FileReader(csvSource));
       int f = 1;
+      HashMap<String, Integer> ref = new HashMap<String, Integer>();
+
       while(output.exists()) {
         output = new File("parsed-" + Integer.toString(f) + ".csv");
         f++;
@@ -45,14 +47,48 @@ public class CSVParser{
           parent.append(lineArr[8]);
           parent.append(lineArr[9]);
           String id = Integer.toString(child.toString().hashCode()) + ":" + Integer.toString(parent.toString().hashCode());
-          // if(!same.contains(id)){
-          bw.write(line + id + "\n");
-            // same.add(id);
+          String childID = Integer.toString(child.toString().hashCode());
+          String parentID = Integer.toString(parent.toString().hashCode());
+          if(ref.containsKey(childID)){
+            int occ = ref.get(childID)+1;
+            ref.put(childID, occ);
+          }else{
+            ref.put(childID, 1);
+          }
+
           j++;
-          // }
         }
       }
-      System.out.println(j);
+
+
+      br = new BufferedReader(new FileReader(csvSource));
+      int kept = 0;
+      while ((line = br.readLine()) != null){
+        String[] lineArr = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+        if(lineArr.length  == 11 && checkNoSpace(lineArr) == true){
+          StringBuilder child = new StringBuilder(lineArr[0]);
+          child.append(lineArr[1]);
+          child.append(lineArr[2]);
+          child.append(lineArr[3]);
+          child.append(lineArr[4]);
+          StringBuilder parent = new StringBuilder(lineArr[5]);
+          parent.append(lineArr[6]);
+          parent.append(lineArr[7]);
+          parent.append(lineArr[8]);
+          parent.append(lineArr[9]);
+          String id = Integer.toString(child.toString().hashCode()) + ":" + Integer.toString(parent.toString().hashCode());
+          String childID = Integer.toString(child.toString().hashCode());
+          String parentID = Integer.toString(parent.toString().hashCode());
+          if(ref.get(childID) >= 5){
+            // System.out.println("criteria met");
+            bw.write(line + id +","+ childID + "," + parentID + ","+ ref.get(childID)+"\n");
+            kept++;
+          }
+        }
+      }
+      System.out.println("All entries: " + j);
+      System.out.println("Kept entries: " + kept);
+
       bw.close();
     }
     catch (Exception e){
