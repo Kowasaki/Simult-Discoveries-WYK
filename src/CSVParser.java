@@ -35,12 +35,12 @@ public class CSVParser{
           StringBuilder child = new StringBuilder(lineArr[0]);
           child.append(lineArr[1]);
           child.append(lineArr[2]);
-          child.append(lineArr[3]);
+          // child.append(lineArr[3]);
           child.append(lineArr[4]);
           StringBuilder parent = new StringBuilder(lineArr[5]);
           parent.append(lineArr[6]);
           parent.append(lineArr[7]);
-          parent.append(lineArr[8]);
+          // parent.append(lineArr[8]);
           parent.append(lineArr[9]);
           String id = Integer.toString(child.toString().hashCode()) + ":" + Integer.toString(parent.toString().hashCode());
           String childID = Integer.toString(child.toString().hashCode());
@@ -65,12 +65,12 @@ public class CSVParser{
           StringBuilder child = new StringBuilder(lineArr[0]);
           child.append(lineArr[1]);
           child.append(lineArr[2]);
-          child.append(lineArr[3]);
+          // child.append(lineArr[3]);
           child.append(lineArr[4]);
           StringBuilder parent = new StringBuilder(lineArr[5]);
           parent.append(lineArr[6]);
           parent.append(lineArr[7]);
-          parent.append(lineArr[8]);
+          // parent.append(lineArr[8]);
           parent.append(lineArr[9]);
           String id = Integer.toString(child.toString().hashCode()) + ":" + Integer.toString(parent.toString().hashCode());
           String childID = Integer.toString(child.toString().hashCode());
@@ -93,7 +93,10 @@ public class CSVParser{
 
   private static boolean checkNoSpace(String[] lineArr ){
     for(int i = 0; i < lineArr.length-1; i++){
-      if(lineArr[i].trim().length() == 0){
+      // skip doi
+      if(i == 3 || i == 8){
+        continue;
+      }else if(lineArr[i].trim().length() == 0){
         return false;
       }
     }

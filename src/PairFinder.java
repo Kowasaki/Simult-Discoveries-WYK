@@ -34,87 +34,49 @@ public class PairFinder{
       HashMap<String, Integer> counts = new HashMap<String, Integer>();
       while ((line = br.readLine()) != null){
         lineNum++;
-        // System.out.println("No: " + lineNum);
         String[] lineArr = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
         if(lineNum == 1) currParent = lineArr[10].split(":")[1];
         String childID = lineArr[10].split(":")[0];
         lookup.put(childID,lineArr);
         counts.put(childID,Integer.parseInt(lineArr[13]));
-        if(lineArr[10].split(":")[1].equals(currParent)){
-          // System.out.println(currParent);
-          // System.out.println("No: " + lineNum);
-          // System.out.println("ID: " + lineArr[10]);
-          // for(String id : lookup.keySet()){
-            // System.out.println("in lookup: " + id);
-          // }
-          // System.out.println("Lookup Size: " + lookup.size());
-        }else{
-          // System.out.println("same parent: " +lineArr[1]);
+        if(!lineArr[10].split(":")[1].equals(currParent)){
           int ind = 0;
           int curr = 0;
           for(String id1 : lookup.keySet()){
             ArrayList<ArrayList<String>> possiblities = new ArrayList<ArrayList<String>>();
             ind++;
             curr = 0;
-            // System.out.println("ID1: " + id1);
             for(String id2 : lookup.keySet()){
               if(curr < ind){
-                // System.out.println("ind: " + ind);
-                // System.out.println("curr: " + curr);
-                // System.out.println("skipped: " + id2);
                 curr++;
-                // continue;
               } else{
-                // System.out.println("ID2: " + id2);
                 ArrayList<String> twins = new ArrayList<String>();
                 String twin1 = lookup.get(id1)[10].split(":")[0];
                 String twin2 = lookup.get(id2)[10].split(":")[0];
-                // System.out.println("Twin1: " + twin1);
-                // System.out.println("Twin2: " + twin2);
-                // System.out.println("prev poss size: "+ possiblities.size());
 
                 if(!lookup.get(id1)[1].equals(lookup.get(id2)[1]) && checkYear(lookup.get(id1)[2], lookup.get(id2)[2])){
-                  // System.out.println(id1 + " and " + id2 + " are twins!");
                   twins.add(twin1);
                   twins.add(twin2);
                   if(possiblities.size() == 0){
                     possiblities.add(twins);
                   }else{
-                    // System.out.println("possibilities size: "+ possiblities.size());
-                    // System.out.println(possiblities.get(0).size());
                     for(int i = 0; i < possiblities.size(); i++){
                       for(int j = 0; j < possiblities.get(i).size(); j++){
-                        // System.out.println("in poss: " + possiblities.get(i).get(j));
                         if(!possiblities.get(i).get(j).equals(id1) && !lookup.get(id2)[1].equals(lookup.get(possiblities.get(i).get(j))[1]) &&
                           checkYear(lookup.get(id2)[2], lookup.get(possiblities.get(i).get(j))[2])){
-                            // System.out.println(possiblities.get(i).get(j));
-                            // System.out.println("another twin: " + possiblities.get(i).get(j));
-                            // System.out.println(lookup.get(id2)[1]);
-                            // System.out.println(lookup.get(possiblities.get(i).get(j))[1]);
-                            // System.out.println(lookup.get(id2)[2]);
-                            // System.out.println(lookup.get(possiblities.get(i).get(j))[2]);
                             if(!isRepeat(possiblities.get(i).get(j), twins)){
-                              // System.out.println("another twin: " + possiblities.get(i).get(j));
-                              // System.out.println(lookup.get(id2)[1]);
-                              // System.out.println(lookup.get(possiblities.get(i).get(j))[1]);
-                              // System.out.println(lookup.get(id2)[2]);
-                              // System.out.println(lookup.get(possiblities.get(i).get(j))[2]);
                               twins.add(possiblities.get(i).get(j));
                             }
-                            // System.out.println("Twin size: " + twins.size());
                         }
                       }
                     }
                     possiblities.add(twins);
                   }
                 }
-                // System.out.println("end of id2 loop");
               }
             }
             // put in hashset
-            // System.out.println("End poss size: " + possiblities.size());
-
             for(int i = 0; i < possiblities.size(); i++){
               Collections.sort(possiblities.get(i));
               StringBuilder twinCode = new StringBuilder("");
@@ -126,18 +88,9 @@ public class PairFinder{
               pairs.add(twinCode.toString());
               twinCode = new StringBuilder("");
             }
-            // System.out.println("end of id1 loop");
           }
           for(String code : pairs){
-            // System.out.println(code);
-            // String[] entries = code.split(":");
-            // for(int i = 0; i < entries.length; i++){
-              // String entry = backToString(lookup.get(entries[i]));
-              // bw.write(entry +","+ code + "," + currParent + "\n");
-              // bw.write(lookup.get(entries[i])[10] +","+ code + "," + currParent +"\n");
-            // }
             bw.write(code + "," + currParent +"\n");
-
           }
           currParent = lineArr[10].split(":")[1];
           lookup = new LinkedHashMap<String, String[]>();
@@ -155,11 +108,9 @@ public class PairFinder{
         output = new File("pairs-" + Integer.toString(f) + ".csv");
         f++;
       }
-      // System.out.println(j);
 
       while ((line = br.readLine()) != null){
         String[] ids = line.split(",");
-        // System.out.println(ids[0]);
         if(childParents.containsKey(ids[0])){
           ArrayList<String> p = childParents.get(ids[0]);
           p.add(ids[1]);
@@ -215,13 +166,11 @@ public class PairFinder{
 
   private static String backToString(String[] in){
     StringBuilder str = new StringBuilder("");
-    // System.out.println(in.length);
     for(int i = 0; i < in.length; i++){
       str.append(in[i]);
       str.append(",");
     }
     str.deleteCharAt(str.length()-1);
-    // System.out.println(str.toString());
     return str.toString();
   }
 
