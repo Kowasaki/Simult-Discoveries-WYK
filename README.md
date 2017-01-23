@@ -2,6 +2,7 @@
 My version of scripts for Simultaneous Discoveries project
 
 *All “To use” sections are meant to be run on the command line.
+
 A1
 •	XMLOperations
   o	Extracts all the reference-parent information from the XMLs and convert into csv format. Only the 15 parent journals are included but no additional filtering done.
@@ -11,6 +12,7 @@ A1
 •	pArg.sh
   o	Shell script for running XMLOperations on HPCC
   o	To use: qsub pArg.sh [name of xml file]
+  
 A2 – A3
 •	CSVParser
   o	Parses the csv created by XMLOperations and filters out entries with missing information (except DOI).
